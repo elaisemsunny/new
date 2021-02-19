@@ -37,4 +37,5 @@ def predict_api():
 
 if __name__=='__main__':
 
-    app.run(debug=True, host='0.0.0.0')
+    socketio.run(debug=True, host='0.0.0.0')
+python3 __init__.py
