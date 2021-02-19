@@ -35,4 +35,6 @@ def predict_api():
     return jsonify(output)
 
 
-app.run(debug=True)
+if __name__=='__main__':
+
+    app.run(port=5000,debug=True,use_reloader=True)
