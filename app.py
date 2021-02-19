@@ -35,3 +35,4 @@ def predict_api():
     return jsonify(output)
 
 
+app.run(debug=True)
