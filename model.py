@@ -17,7 +17,7 @@ df_missing_pay_1 = df_clean.loc[missing_pay_1_mask,:].copy()
 df = pd.read_csv('D:/analysis/cleaned_data.csv')
 
 features_response = df.columns.tolist()
-items_to_remove = ['ID', 'SEX', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6',
+items_to_remove = ['ID','LIMIT_BAL','EDUCATION','MARRIAGE', 'SEX', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6',
                    'EDUCATION_CAT', 'graduate school', 'high school', 'none',
                    'others', 'university']
 
@@ -91,7 +91,7 @@ pay_1_df = df.copy()
 
 features_for_imputation = pay_1_df.columns.tolist()
 
-items_to_remove = ['ID', 'SEX', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6',
+items_to_remove = ['ID','LIMIT_BAL','EDUCATION','MARRIAGE', 'SEX', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6',
                    'EDUCATION_CAT', 'graduate school', 'high school', 'none',
                    'others', 'university','default payment next month']
 
