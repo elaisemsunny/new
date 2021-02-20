@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
-from flask_socketio import SocketIO, emit
 
 app = Flask(__name__)
 model = pickle.load(open('model.pkl', 'rb'))
@@ -38,5 +37,5 @@ def predict_api():
 
 if __name__=='__main__':
 
-    socketio.run(socketio.run(app, debug=True, use_reloader=False))
+    app.run(debug=True)
 
